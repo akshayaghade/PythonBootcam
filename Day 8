@@ -1,0 +1,103 @@
+#Write a Python script to merge two Python dictionaries
+
+d1 = {'a': 100, 'b': 200}
+d2 = {'x': 300, 'y': 200}
+d = d1.copy()
+d.update(d2)
+print(d)
+
+#Write a program to sort the value from descending to ascending in list and convert it in to a set
+
+a=[15,30,45,60,75,90]
+a.sort() #
+print(a)
+
+a.sort(reverse=True)
+print(a)
+
+set1=set(a)
+print(set1)
+
+#Write a Python to list number of item in a dictionary key and sort the list with the help of a function & without the function.
+
+test_dict = {'jupyter':[7, 6, 3],
+                        'is': [2, 10, 3],
+                        'best': [19, 4]}
+print("The original dictionary is : " + str(test_dict))
+res = dict()
+for key in sorted(test_dict):
+        res[key] = sorted(test_dict[key])
+print("The sorted dictionary : " + str(res))
+
+#Write a Python program to get a string from a given string (user input) and change the frist occurrence of the word to a user specified input.
+
+def change_char(str1):
+    char = str1[0]
+    str1 = str1.replace(char, '$')
+    str1 = char + str1[1:]
+    
+    return str1
+print(change_char('restart'))
+
+#Write a Python program to get a string from a given string where all occurrence of its frist char have been changed to capital letter
+
+def function():
+    user=input("Enter the string you want to print :")
+    return user.capitalize()
+
+function()
+
+#Write a Python program to find the repeated items of a list
+
+a =[2, 4, 5, 6, 2, 3, 4, 4, 7]
+print(a)
+count = a.count(4)
+print(count)
+
+#Write a Python program to check the sum of three element and divided by a value which is given as an input by the user
+
+X=int(input("Enter your number :"))
+Y=int(input("Enter your number :"))
+Z=int(input("Enter your number :"))
+sum=X+Y+Z
+print(sum)
+div=int(input("Enter the number to divide sum!"))
+if (sum% div)==0:
+    print("The given input divide")
+else :
+    print("The given input does not divide sum")
+
+#Write a Python program to find the Mean,median,mode among three given numbers
+
+x = input("Input the first number")
+y = input("Input the second number")
+z = input("Input the third number")
+print("Median of the above three numbers")
+if y < x and x < z:
+    print(x)
+elif z < x and x < y:
+    print(x)
+elif z < y and y < x:
+    print(y)
+elif x < y and y < z:
+    print(y)
+elif y < z and z < x:
+    print(z)
+elif x < z and z < y:
+    print(z)
+
+#Write a Python program to swap cases of a given string
+
+a="Akshay"
+b="Aghade"
+tep=a
+a=b
+b=tep
+print(a,b)
+
+dec = 185
+
+print("The decimal value of", dec, "is:")
+print(bin(dec), "in binary.")
+print(oct(dec), "in octal.")
+print(hex(dec), "in hexadecimal.")
